@@ -7,6 +7,7 @@ import FormsIcon from "../../public/forms.svg";
 import StatsCompareIcon from "../../public/stats-compare.svg";
 import ChatroomIcon from "../../public/chatroom.svg";
 import HoneypotIcon from "../../public/honeypot.svg";
+import ReportIcon from "../../public/report.svg";
 
 export default function Projects() {
   return (
@@ -45,7 +46,7 @@ export default function Projects() {
             description="A Gmail alternative that I made because I wanted free custom domain!"
           />
 
-          <ProjectInfo
+          {/* <ProjectInfo
             name="RiskyBOT"
             icon="https://bot.riskymh.dev/robot.svg"
             Icon={RiskyBOTIcon}
@@ -56,6 +57,17 @@ export default function Projects() {
               { url: "https://bot.riskymh.dev", type: "website" },
             ]}
             description="A multipurpose Discord bot that can do random fun things..."
+          /> */}
+          <ProjectInfo
+            name="/report"
+            icon="https://bot.riskymh.dev/robot.svg"
+            Icon={ReportIcon}
+            links={[
+              { type: "discord-bot-invite", url: "https://discord.com/api/oauth2/authorize?client_id=1540722224288366682", primary: true },
+              { url: "https://github.com/RiskyMH/report-bot", type: "github" },
+              { url: "https://discord.com/discovery/applications/1540722224288366682", type: "website" },
+            ]}
+            description="Discord bot where you can messages and users to moderators"
           />
         </div>
         <div className="md:flex md:flex-col md:gap-8">
