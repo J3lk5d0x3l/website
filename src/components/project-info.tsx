@@ -56,7 +56,7 @@ export default function ProjectInfo({ name, icon, Icon, iconText, links = [], de
           <div className="flex flex-col gap-4 md:gap-2">
             <div className="text-center md:text-left">
               <h3 className="text-2xl font-bold leading-9">{name}</h3>
-              <p className="text-text-secondary md:text-pretty text-balance">{description}</p>
+              <p className="text-text-secondary md:text-pretty max-sm:text-balance">{description}</p>
             </div>
             <ul className="flex flex-row justify-center md:justify-normal gap-2 list-none">
               {links
