@@ -11,6 +11,7 @@ export type LayoutProps = {
   siteName?: string;
   card?: "summary" | "summary_large_image";
   themeColor?: string;
+  twitterCreator?: string;
   canonical?: string;
   componentEmbed?: object;
   children: React.ReactNode;
@@ -28,6 +29,7 @@ const Layout: React.FC<LayoutProps> = ({
   siteName = "s3lk5d0x3l",
   card = "summary",
   themeColor = "#FF6723",
+  twitterCreator = "j3lk5d0x3l",
   canonical = "/",
   componentEmbed,
   children,
@@ -41,7 +43,7 @@ const Layout: React.FC<LayoutProps> = ({
       <meta name="generator" content="s3lk5d0x3l React layout" />
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="keywords" content="s3lk5d0x3l" />
+      <meta name="keywords" content="s3lk5d0x3l,VIRRON" />
       <meta name="author" content="s3lk5d0x3l" />
       {/* Discord coloring etc */}
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1a1a1a" />
@@ -57,6 +59,7 @@ const Layout: React.FC<LayoutProps> = ({
       <meta property="og:image:width" content={String(imageWidth)} />
       <meta property="og:image:height" content={String(imageHeight)} />
       <meta property="twitter:card" content={card} />
+      <meta property="twitter:creator" content={twitterCreator} />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={image} />
@@ -79,6 +82,11 @@ const Layout: React.FC<LayoutProps> = ({
                 "@id": "https://vyrron.net/#person",
                 name: "s3lk5d0x3l",
                 url: "https://vyrron.net/",
+                sameAs: [
+                  "https://github.com/J3lk5d0x3l",
+                  "https://x.com/j3lk5d0x3l",
+                  "https://discord.vyrron.net",
+                ],
                 image: {
                   "@type": "ImageObject",
                   "@id": "https://vyrron.net#logo",
