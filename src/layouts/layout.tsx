@@ -4,12 +4,32 @@ import "../tailwind.css";
 // You can use next/head or react-helmet if SSR/SPA, but since this is static, just output direct head
 export type LayoutProps = {
   title?: string;
+  description?: string;
+  image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  siteName?: string;
+  card?: "summary" | "summary_large_image";
+  themeColor?: string;
   canonical?: string;
   children: React.ReactNode;
 };
 const siteTitle = "s3lk5d0x3l";
+const siteDescription = "Solo una persona random en internet";
+const siteImage = "https://vyrron.net/fire_anim.png";
 
-const Layout: React.FC<LayoutProps> = ({ title = siteTitle, canonical = "/", children }) => (
+const Layout: React.FC<LayoutProps> = ({
+  title = siteTitle,
+  description = siteDescription,
+  image = siteImage,
+  imageWidth = 256,
+  imageHeight = 256,
+  siteName = "s3lk5d0x3l",
+  card = "summary",
+  themeColor = "#FF6723",
+  canonical = "/",
+  children,
+}) => (
   <html lang="es">
     <head>
       <meta charSet="UTF-8" />
@@ -18,23 +38,26 @@ const Layout: React.FC<LayoutProps> = ({ title = siteTitle, canonical = "/", chi
       <link rel="canonical" href={`https://vyrron.net${canonical}`} />
       <meta name="generator" content="s3lk5d0x3l React layout" />
       <title>{title}</title>
-      <meta name="description" content="Solo una persona random en internet" />
+      <meta name="description" content={description} />
       <meta name="keywords" content="s3lk5d0x3l" />
       <meta name="author" content="s3lk5d0x3l" />
       {/* Discord coloring etc */}
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1a1a1a" />
-      <meta name="theme-color" content="#FF6723" />
+      <meta name="theme-color" content={themeColor} />
       <meta name="color-scheme" content="dark" />
       {/* Fancier SEO */}
-      <meta property="og:title" content="s3lk5d0x3l" />
-      <meta property="og:description" content="Solo una persona random en internet" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://vyrron.net/" />
-      <meta property="og:image" content="https://vyrron.net/fire_anim.png" />
-      <meta property="twitter:card" content="summary" />
-      <meta property="twitter:title" content="s3lk5d0x3l" />
-      <meta property="twitter:description" content="Solo una persona random en internet" />
-      <meta property="twitter:image" content="https://vyrron.net/fire_anim.png" />
+      <meta property="og:url" content={`https://vyrron.net${canonical}`} />
+      <meta property="og:site_name" content={siteName} />
+      <meta property="og:image" content={image} />
+      <meta property="og:image:width" content={String(imageWidth)} />
+      <meta property="og:image:height" content={String(imageHeight)} />
+      <meta property="twitter:card" content={card} />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={description} />
+      <meta property="twitter:image" content={image} />
       <meta name="application-name" content="s3lk5d0x3l" />
       <script
         type="application/ld+json"
