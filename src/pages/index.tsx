@@ -4,8 +4,37 @@ import ScrollHint from "../components/scroll-hint";
 import Projects from "../components/projects";
 import MainCard from "../components/main-card";
 
+const HOME_COMPONENT_EMBED = {
+  type: 17,
+  accent_color: 16743171,
+  components: [
+    {
+      type: 9,
+      components: [
+        {
+          type: 10,
+          content:
+            "## [s3lk5d0x3l](https://vyrron.net)\nSolo una persona random en internet.",
+        },
+      ],
+      accessory: {
+        type: 11,
+        media: { url: "https://vyrron.net/fire_anim.png" },
+      },
+    },
+    {
+      type: 1,
+      components: [
+        { type: 2, style: 5, label: "GitHub", url: "https://github.com/J3lk5d0x3l" },
+        { type: 2, style: 5, label: "Discord", url: "https://discord.vyrron.net" },
+        { type: 2, style: 5, label: "VIRRON Bot", url: "https://vyrron.net/bot" },
+      ],
+    },
+  ],
+};
+
 const Index = () => (
-  <Layout canonical="/">
+  <Layout canonical="/" componentEmbed={HOME_COMPONENT_EMBED}>
     <style>{`body { background-color: var(--background); overflow: hidden; }`}</style>
      <div
        id="main"
