@@ -12,6 +12,7 @@ export type LayoutProps = {
   card?: "summary" | "summary_large_image";
   themeColor?: string;
   canonical?: string;
+  componentEmbed?: object;
   children: React.ReactNode;
 };
 const siteTitle = "s3lk5d0x3l";
@@ -28,6 +29,7 @@ const Layout: React.FC<LayoutProps> = ({
   card = "summary",
   themeColor = "#FF6723",
   canonical = "/",
+  componentEmbed,
   children,
 }) => (
   <html lang="es">
@@ -58,6 +60,13 @@ const Layout: React.FC<LayoutProps> = ({
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={image} />
+      {componentEmbed && (
+        <script
+          id="discord:component-embed"
+          type="application/json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({ component: componentEmbed }) }}
+        />
+      )}
       <meta name="application-name" content="s3lk5d0x3l" />
       <script
         type="application/ld+json"
