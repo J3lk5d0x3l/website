@@ -74,6 +74,68 @@ const Layout: React.FC<LayoutProps> = ({ title = siteTitle, canonical = "/", chi
           })
         }}
       />
+      <script
+        id="discord:component-embed"
+        type="application/json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "component": {
+              "type": 17, // ComponentType.CONTAINER
+              "accent_color": 0xFF6723,
+              "components": [
+                {
+                  "type": 9, // ComponentType.SECTION
+                  "components": [
+                    {
+                      "type": 10, // ComponentType.TEXT_DISPLAY
+                      "content": `## [RiskyMH](https://riskymh.dev)\nJust a random person on the internet.\nMy projects include <:honeypot:1452856668202467481> [Honeypot](https://honeypot.riskymh.dev), <:emailthing:1226746122895097916> [EmailThing](https://emailthing.app/home), and more!`,
+                    }
+                  ],
+                  "accessory": {
+                    "type": 11, // ComponentType.THUMBNAIL
+                    "media": {
+                      "url": "https://riskymh.dev/fire_anim.avif",
+                    }
+                  }
+                },
+                {
+                  "type": 1,  // ComponentType.ACTION_ROW
+                  "components": [
+                    {
+                      "type": 2,  // ComponentType.BUTTON
+                      "label": "View Website",
+                      "style": 5,
+                      "url": "https://riskymh.dev",
+                      "emoji": {
+                        "name": "fire",
+                        "id": "1281081113338450012",
+                        "animated": false
+                      }
+                    },
+                    {
+                      "type": 2,  // ComponentType.BUTTON
+                      "label": "GitHub",
+                      "style": 5,
+                      "url": "https://github.com/RiskyMH",
+                      "emoji": {
+                        "name": "github",
+                        "id": "1119818837542576208",
+                        "animated": false
+                      }
+                    },
+                    {
+                      "type": 2,  // ComponentType.BUTTON
+                      "label": "Discord Server",
+                      "style": 5,
+                      "url": "https://discord.com/invite/EpRzgepKuF",
+                    },
+                  ]
+                }
+              ]
+            }
+          })
+        }}
+      />
 
       {/* MUST NOT REMOVE */}
       <style id="tailwind-styles">/*tailwind*/</style>
