@@ -1,13 +1,6 @@
 import React from "react";
 import { minify } from "../tools/minify.macro" with { type: "macro" };
 import ProjectInfo from "./project-info";
-import EmailThingIcon from "../../public/emailthing.svg";
-import RiskyBOTIcon from "../../public/riskybot.svg";
-import FormsIcon from "../../public/forms.svg";
-import StatsCompareIcon from "../../public/stats-compare.svg";
-import ChatroomIcon from "../../public/chatroom.svg";
-import HoneypotIcon from "../../public/honeypot.svg";
-import ReportIcon from "../../public/report.svg";
 
 export default function Projects() {
   return (
@@ -23,87 +16,28 @@ export default function Projects() {
         className="max-w-5xl mx-auto px-4 md:px-6 xl:px-8 w-full xl:grid xl:grid-cols-2 gap-10 space-y-16 md:space-y-8 xl:space-y-0 pb-10"
       >
         <div className="md:flex md:flex-col md:gap-8">
-          <ProjectGroupTitle title="Favorite" />
+          <ProjectGroupTitle title="Destacado" />
           <ProjectInfo
-            name="Honeypot"
-            icon="/honeypot.svg"
-            Icon={HoneypotIcon}
+            name="VIRRON"
+            icon="/vyrron-bot.png"
             links={[
-              { type: "discord-bot-invite", url: "https://discord.com/api/oauth2/authorize?client_id=1450060292716494940", primary: true },
-              { url: "https://github.com/RiskyMH/honeypot", type: "github" },
-              { url: "https://honeypot.riskymh.dev", type: "website" },
-              { url: "https://discord.com/discovery/applications/1450060292716494940", type: "website", hidden: true },
+              { type: "discord-bot-invite", url: "https://discord.com/oauth2/authorize?client_id=1536153235113640047&permissions=8&scope=bot", primary: true },
+              { url: "https://github.com/J3lk5d0x3l/vyrron-bot", type: "github" },
+              { url: "https://vyrron.net/bot", type: "website" },
             ]}
-            description="A discord bot which bans people that message in #honeypot channel"
-          />
-          <ProjectGroupTitle title="Other Fun Things" />
-          <ProjectInfo
-            name="EmailThing"
-            icon="/emailthing.svg"
-            Icon={EmailThingIcon}
-            iconCircle
-            links={[{ url: "https://emailthing.app/home", type: "website", primary: true }, { url: "https://github.com/RiskyMH/Email", type: "github" }, { url: "https://x.com/EmailThing_", type: "twitter" }]}
-            description="A Gmail alternative that I made because I wanted free custom domain!"
-          />
-
-          {/* <ProjectInfo
-            name="RiskyBOT"
-            icon="https://bot.riskymh.dev/robot.svg"
-            Icon={RiskyBOTIcon}
-            iconCircle
-            links={[
-              { type: "discord-bot-invite", url: "https://discord.com/api/oauth2/authorize?client_id=780657028695326720", primary: true },
-              { url: "https://github.com/RiskyMH/RiskyBOT", type: "github" },
-              { url: "https://bot.riskymh.dev", type: "website" },
-            ]}
-            description="A multipurpose Discord bot that can do random fun things..."
-          /> */}
-          <ProjectInfo
-            name="/report"
-            icon="https://bot.riskymh.dev/robot.svg"
-            Icon={ReportIcon}
-            links={[
-              { type: "discord-bot-invite", url: "https://discord.com/api/oauth2/authorize?client_id=1540722224288366682", primary: true },
-              { url: "https://github.com/RiskyMH/report-bot", type: "github" },
-              { url: "https://discord.com/discovery/applications/1540722224288366682", type: "website" },
-            ]}
-            description="Discord bot where you can messages and users to moderators"
-          />
-        </div>
-        <div className="md:flex md:flex-col md:gap-8">
-          <ProjectGroupTitle title="Simple Web Apps" />
-          <ProjectInfo
-            name="Chatroom"
-            icon="/chatroom.svg"
-            Icon={ChatroomIcon}
-            links={[{ url: "https://chatroom.riskymh.dev", type: "website", primary: true }, { url: "https://github.com/RiskyMH/Chatroom", type: "github" }]}
-            description="A basic & stateless websocket server where you can chat anonymously"
-          />
-          <ProjectInfo
-            name="Forms"
-            icon="/forms.svg"
-            Icon={FormsIcon}
-            links={[{ url: "https://forms.riskymh.dev", type: "website", primary: true }, { url: "https://github.com/RiskyMH/Forms", type: "github" }]}
-            description="A website where you can create forms and get responses"
-          />
-          <ProjectInfo
-            name="Stats Compare"
-            icon="/stats-compare.svg"
-            Icon={StatsCompareIcon}
-            links={[{ url: "https://stats.riskymh.dev", type: "website", primary: true }, { url: "https://github.com/RiskyMH/Stats", type: "github" }]}
-            description="Site with a bunch of stats games (can play higher or lower)"
+            description="Bot todo-en-uno para Discord: tickets, automod, música, niveles y más"
           />
         </div>
 
       </div>
       <div className="project-card flex h-dvh w-full snap-center items-center justify-center md:snap-align-none md:h-auto md:-mt-10 max-md:hidden">
         <a
-          href="https://github.com/RiskyMH"
+          href="https://github.com/J3lk5d0x3l"
           target="_blank"
           rel="noopener noreferrer"
           className="text-center text-text-secondary hover:text-white hover:underline font-medium transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-focus p-1 rounded-xl"
         >
-          (view more on my github)
+          (ver más en mi github)
         </a>
       </div>
       <script dangerouslySetInnerHTML={{ __html: badgeScript }} />
@@ -193,7 +127,7 @@ const badgeScript = minify(/* js */`
             }
             const isMobile = window.matchMedia("(max-width: 768px)").matches;
             const group = isMobile ? getNearestGroupHeading(mostVisible.target) : null;
-            updateBadge(group || "RiskyMH");
+            updateBadge(group || "s3lk5d0x3l");
             badge.style.opacity = "1";
           } else {
             badge.style.opacity = "0";

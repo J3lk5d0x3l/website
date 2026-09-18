@@ -4,39 +4,66 @@ import "../tailwind.css";
 // You can use next/head or react-helmet if SSR/SPA, but since this is static, just output direct head
 export type LayoutProps = {
   title?: string;
+  description?: string;
+  image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  siteName?: string;
+  card?: "summary" | "summary_large_image";
+  themeColor?: string;
+  twitterCreator?: string;
   canonical?: string;
+  componentEmbed?: object;
   children: React.ReactNode;
 };
-const siteTitle = "RiskyMH";
+const siteTitle = "s3lk5d0x3l";
+const siteDescription = "Solo una persona random en internet";
+const siteImage = "https://vyrron.net/fire_anim.png";
 
-const Layout: React.FC<LayoutProps> = ({ title = siteTitle, canonical = "/", children }) => (
-  <html lang="en">
+const Layout: React.FC<LayoutProps> = ({
+  title = siteTitle,
+  description = siteDescription,
+  image = siteImage,
+  imageWidth = 256,
+  imageHeight = 256,
+  siteName = "s3lk5d0x3l",
+  card = "summary",
+  themeColor = "#FF6723",
+  twitterCreator = "j3lk5d0x3l",
+  canonical = "/",
+  componentEmbed,
+  children,
+}) => (
+  <html lang="es">
     <head>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width" />
-      <link rel="icon" type="image/svg+xml" href="/fire_flat.svg" />
-      <link rel="canonical" href={`https://riskymh.dev${canonical}`} />
-      <meta name="generator" content="RiskyMH React layout" />
+      <link rel="icon" type="image/png" href="/favicon.png" />
+      <link rel="canonical" href={`https://vyrron.net${canonical}`} />
+      <meta name="generator" content="s3lk5d0x3l React layout" />
       <title>{title}</title>
-      <meta name="description" content="Just a random person on the internet" />
-      <meta name="keywords" content="RiskyMH,EmailThing" />
-      <meta name="author" content="RiskyMH" />
+      <meta name="description" content={description} />
+      <meta name="keywords" content="s3lk5d0x3l,VIRRON" />
+      <meta name="author" content="s3lk5d0x3l" />
       {/* Discord coloring etc */}
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1a1a1a" />
-      <meta name="theme-color" content="#FF6723" />
+      <meta name="theme-color" content={themeColor} />
       <meta name="color-scheme" content="dark" />
       {/* Fancier SEO */}
-      <meta property="og:title" content="RiskyMH" />
-      <meta property="og:description" content="Just a random person on the internet" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://riskymh.dev/" />
-      <meta property="og:image" content="https://riskymh.dev/fire_anim.png" />
-      <meta property="twitter:card" content="summary" />
-      <meta property="twitter:creator" content="RiskyMH5" />
-      <meta property="twitter:title" content="RiskyMH" />
-      <meta property="twitter:description" content="Just a random person on the internet" />
-      <meta property="twitter:image" content="https://riskymh.dev/fire_anim.png" />
-      <meta name="application-name" content="RiskyMH" />
+      <meta property="og:url" content={`https://vyrron.net${canonical}`} />
+      <meta property="og:site_name" content={siteName} />
+      <meta property="og:image" content={image} />
+      <meta property="og:image:width" content={String(imageWidth)} />
+      <meta property="og:image:height" content={String(imageHeight)} />
+      <meta property="twitter:card" content={card} />
+      <meta property="twitter:creator" content={twitterCreator} />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={description} />
+      <meta property="twitter:image" content={image} />
+      <meta name="application-name" content="s3lk5d0x3l" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -45,29 +72,29 @@ const Layout: React.FC<LayoutProps> = ({ title = siteTitle, canonical = "/", chi
             "@graph": [
               {
                 "@type": "Person",
-                "@id": "https://riskymh.dev/#person",
-                name: "RiskyMH",
-                url: "https://riskymh.dev/",
+                "@id": "https://vyrron.net/#person",
+                name: "s3lk5d0x3l",
+                url: "https://vyrron.net/",
                 sameAs: [
-                  "https://github.com/RiskyMH",
-                  "https://x.com/RiskyMH5",
-                  "https://youtube.com/@RiskyMH",
+                  "https://github.com/J3lk5d0x3l",
+                  "https://x.com/j3lk5d0x3l",
+                  "https://discord.vyrron.net",
                 ],
                 image: {
                   "@type": "ImageObject",
-                  "@id": "https://riskymh.dev#logo",
-                  url: "https://riskymh.devfire_anim.png",
-                  caption: "RiskyMH Logo"
+                  "@id": "https://vyrron.net#logo",
+                  url: "https://vyrron.net/fire_anim.png",
+                  caption: "s3lk5d0x3l Logo"
                 },
               },
               {
                 "@type": "WebSite",
-                "@id": "https://riskymh.dev/#website",
-                name: "RiskyMH",
-                url: "https://riskymh.dev/",
-                description: "Just a random person on the internet.",
+                "@id": "https://vyrron.net/#website",
+                name: "s3lk5d0x3l",
+                url: "https://vyrron.net/",
+                description: "Solo una persona random en internet.",
                 publisher: {
-                  "@id": "https://riskymh.dev/#person"
+                  "@id": "https://vyrron.net/#person"
                 },
               }
             ]
@@ -79,55 +106,45 @@ const Layout: React.FC<LayoutProps> = ({ title = siteTitle, canonical = "/", chi
         type="application/json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "component": {
-              "type": 17, // ComponentType.CONTAINER
+            "component": componentEmbed ?? {
+              "type": 17,
               "accent_color": 0xFF6723,
               "components": [
                 {
-                  "type": 9, // ComponentType.SECTION
+                  "type": 9,
                   "components": [
                     {
-                      "type": 10, // ComponentType.TEXT_DISPLAY
-                      "content": `## [RiskyMH](https://riskymh.dev)\nJust a random person on the internet.\nMy projects include <:honeypot:1452856668202467481> [Honeypot](https://honeypot.riskymh.dev), <:emailthing:1226746122895097916> [EmailThing](https://emailthing.app/home), and more!`,
+                      "type": 10,
+                      "content": `## [s3lk5d0x3l](https://vyrron.net)\nSolo una persona random en internet.\nMis proyectos incluyen 🤖 [VIRRON](https://vyrron.net/bot) y más!`,
                     }
                   ],
                   "accessory": {
-                    "type": 11, // ComponentType.THUMBNAIL
+                    "type": 11,
                     "media": {
-                      "url": "https://riskymh.dev/fire_anim.avif",
+                      "url": "https://vyrron.net/fire_anim.png",
                     }
                   }
                 },
                 {
-                  "type": 1,  // ComponentType.ACTION_ROW
+                  "type": 1,
                   "components": [
                     {
-                      "type": 2,  // ComponentType.BUTTON
-                      "label": "View Website",
-                      "style": 5,
-                      "url": "https://riskymh.dev",
-                      "emoji": {
-                        "name": "fire",
-                        "id": "1281081113338450012",
-                        "animated": false
-                      }
-                    },
-                    {
-                      "type": 2,  // ComponentType.BUTTON
+                      "type": 2,
                       "label": "GitHub",
                       "style": 5,
-                      "url": "https://github.com/RiskyMH",
-                      "emoji": {
-                        "name": "github",
-                        "id": "1119818837542576208",
-                        "animated": false
-                      }
+                      "url": "https://github.com/J3lk5d0x3l",
                     },
                     {
-                      "type": 2,  // ComponentType.BUTTON
+                      "type": 2,
                       "label": "Discord Server",
                       "style": 5,
-                      "url": "https://discord.com/invite/EpRzgepKuF",
+                      "url": "https://discord.vyrron.net",
+                    },
+                    {
+                      "type": 2,
+                      "label": "VIRRON Bot",
+                      "style": 5,
+                      "url": "https://vyrron.net/bot",
                     },
                   ]
                 }

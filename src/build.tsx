@@ -3,10 +3,12 @@ import path from 'path';
 import React from 'react';
 import { renderToReadableStream } from 'react-dom/server';
 import HomePage from './pages/index';
+import BotPage from './pages/bot';
 import NotFoundPage from './pages/404';
 
 const pages: { component: React.ReactElement; filename: string }[] = [
     { component: <HomePage />, filename: 'index.html' },
+    { component: <BotPage />, filename: 'bot.html' },
     { component: <NotFoundPage />, filename: '404.html' },
 ];
 
