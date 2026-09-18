@@ -16,7 +16,7 @@ export type LayoutProps = {
   componentEmbed?: object;
   children: React.ReactNode;
 };
-const siteTitle = "s3lk5d0x3l";
+const siteTitle = "ry8h";
 const siteDescription = "Solo una persona random en internet";
 const siteImage = "https://vyrron.net/avatar.png";
 
@@ -26,7 +26,7 @@ const Layout: React.FC<LayoutProps> = ({
   image = siteImage,
   imageWidth = 512,
   imageHeight = 512,
-  siteName = "s3lk5d0x3l",
+  siteName = "ry8h",
   card = "summary",
   themeColor = "#FF6723",
   twitterCreator = "j3lk5d0x3l",
@@ -40,11 +40,11 @@ const Layout: React.FC<LayoutProps> = ({
       <meta name="viewport" content="width=device-width" />
       <link rel="icon" type="image/png" href="/favicon.png" />
       <link rel="canonical" href={`https://vyrron.net${canonical}`} />
-      <meta name="generator" content="s3lk5d0x3l React layout" />
+      <meta name="generator" content="ry8h React layout" />
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="keywords" content="s3lk5d0x3l,VIRRON" />
-      <meta name="author" content="s3lk5d0x3l" />
+      <meta name="keywords" content="ry8h,VIRRON" />
+      <meta name="author" content="ry8h" />
       {/* Discord coloring etc */}
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1a1a1a" />
       <meta name="theme-color" content={themeColor} />
@@ -63,7 +63,7 @@ const Layout: React.FC<LayoutProps> = ({
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={image} />
-      <meta name="application-name" content="s3lk5d0x3l" />
+      <meta name="application-name" content="ry8h" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -73,7 +73,7 @@ const Layout: React.FC<LayoutProps> = ({
               {
                 "@type": "Person",
                 "@id": "https://vyrron.net/#person",
-                name: "s3lk5d0x3l",
+                name: "ry8h",
                 url: "https://vyrron.net/",
                 sameAs: [
                   "https://github.com/J3lk5d0x3l",
@@ -90,7 +90,7 @@ const Layout: React.FC<LayoutProps> = ({
               {
                 "@type": "WebSite",
                 "@id": "https://vyrron.net/#website",
-                name: "s3lk5d0x3l",
+                name: "ry8h",
                 url: "https://vyrron.net/",
                 description: "Solo una persona random en internet.",
                 publisher: {
@@ -115,7 +115,7 @@ const Layout: React.FC<LayoutProps> = ({
                   "components": [
                     {
                       "type": 10,
-                      "content": `## [s3lk5d0x3l](https://vyrron.net)\nSolo una persona random en internet.\nMis proyectos incluyen 🤖 [VIRRON](https://vyrron.net/bot) y más!`,
+                      "content": `## [ry8h](https://vyrron.net)\nSolo una persona random en internet.\nMis proyectos incluyen 🤖 [VIRRON](https://vyrron.net/bot) y más!`,
                     }
                   ],
                   "accessory": {

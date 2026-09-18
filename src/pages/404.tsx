@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../layouts/layout";
 
 const NotFoundPage = () => (
-  <Layout title="404 | s3lk5d0x3l">
+  <Layout title="404 | ry8h">
     <style>{`body { background-color: var(--background); }`}</style>
      <main className="flex h-dvh w-screen flex-col items-center justify-center bg-background text-white" aria-labelledby="notfound-title" tabIndex={-1}>
        <h1 id="notfound-title" className="text-5xl font-bold">404</h1>

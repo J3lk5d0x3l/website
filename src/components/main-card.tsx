@@ -31,7 +31,7 @@ export const MainCard: React.FC = () => (
       </picture>
     <div className="flex flex-col gap-2 md:mr-2">
       <div className="text-center md:text-left">
-        <h1 className="text-3xl font-bold leading-9" itemProp="name">s3lk5d0x3l</h1>
+        <h1 className="text-3xl font-bold leading-9" itemProp="name">ry8h</h1>
         <p className="text-text-secondary" itemProp="description">Solo una persona random en internet</p>
       </div>
       <div className="flex flex-col md:flex-row gap-2 w-full">
