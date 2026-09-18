@@ -25,7 +25,7 @@ export default function Projects() {
               { url: "https://github.com/J3lk5d0x3l/vyrron-bot", type: "github" },
               { url: "https://vyrron.net/bot", type: "website" },
             ]}
-            description="Bot todo-en-uno para Discord: tickets, automod, música, niveles y más"
+            description="Bot all-in-one para Discord: tickets, automod, música, niveles y más"
           />
         </div>
 
