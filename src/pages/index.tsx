@@ -6,7 +6,7 @@ import MainCard from "../components/main-card";
 
 const HOME_COMPONENT_EMBED = {
   type: 17,
-  accent_color: 16738083,
+  accent_color: 16743981,
   components: [
     {
       type: 9,

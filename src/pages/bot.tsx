@@ -6,7 +6,7 @@ const INVITE_URL =
 
 const COMPONENT_EMBED = {
   type: 17,
-  accent_color: 5793266,
+  accent_color: 3241398,
   components: [
     {
       type: 9,
@@ -25,8 +25,9 @@ const COMPONENT_EMBED = {
     {
       type: 1,
       components: [
-        { type: 2, style: 5, label: "Invite Bot", url: INVITE_URL },
-        { type: 2, style: 5, label: "Discord", url: "https://discord.vyrron.net" },
+        { type: 2, style: 5, label: "Invite Bot", url: INVITE_URL, emoji: { name: "vyrron", id: "1550509597712977930", animated: false } },
+        { type: 2, style: 5, label: "Support Server", url: "https://discord.vyrron.net" },
+        { type: 2, style: 5, label: "View Docs", url: "https://vyrron.net/bot" },
       ],
     },
   ],
@@ -41,7 +42,7 @@ const Bot = () => (
     imageHeight={630}
     siteName="VIRRON"
     card="summary_large_image"
-    themeColor="#5865F2"
+    themeColor="#3175B6"
     canonical="/bot"
     componentEmbed={COMPONENT_EMBED}
   >
