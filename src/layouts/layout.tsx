@@ -28,7 +28,7 @@ const Layout: React.FC<LayoutProps> = ({
   imageHeight = 512,
   siteName = "ry8h",
   card = "summary",
-  themeColor = "#FF7E2D",
+  themeColor = "#4297C8",
   twitterCreator = "j3lk5d0x3l",
   canonical = "/",
   componentEmbed,
@@ -108,7 +108,7 @@ const Layout: React.FC<LayoutProps> = ({
           __html: JSON.stringify({
             "component": componentEmbed ?? {
               "type": 17,
-              "accent_color": 0xFF7E2D,
+              "accent_color": 0x4297C8,
               "components": [
                 {
                   "type": 9,
