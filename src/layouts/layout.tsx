@@ -18,14 +18,14 @@ export type LayoutProps = {
 };
 const siteTitle = "s3lk5d0x3l";
 const siteDescription = "Solo una persona random en internet";
-const siteImage = "https://vyrron.net/fire_anim.png";
+const siteImage = "https://vyrron.net/avatar.png";
 
 const Layout: React.FC<LayoutProps> = ({
   title = siteTitle,
   description = siteDescription,
   image = siteImage,
-  imageWidth = 256,
-  imageHeight = 256,
+  imageWidth = 512,
+  imageHeight = 512,
   siteName = "s3lk5d0x3l",
   card = "summary",
   themeColor = "#FF6723",
@@ -83,8 +83,8 @@ const Layout: React.FC<LayoutProps> = ({
                 image: {
                   "@type": "ImageObject",
                   "@id": "https://vyrron.net#logo",
-                  url: "https://vyrron.net/fire_anim.png",
-                  caption: "s3lk5d0x3l Logo"
+                  url: "https://vyrron.net/avatar.png",
+                  caption: "ry8h"
                 },
               },
               {
@@ -121,7 +121,7 @@ const Layout: React.FC<LayoutProps> = ({
                   "accessory": {
                     "type": 11,
                     "media": {
-                      "url": "https://vyrron.net/fire_anim.png",
+                      "url": "https://vyrron.net/avatar.png",
                     }
                   }
                 },

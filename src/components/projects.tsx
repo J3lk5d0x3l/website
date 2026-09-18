@@ -127,7 +127,7 @@ const badgeScript = minify(/* js */`
             }
             const isMobile = window.matchMedia("(max-width: 768px)").matches;
             const group = isMobile ? getNearestGroupHeading(mostVisible.target) : null;
-            updateBadge(group || "s3lk5d0x3l");
+            updateBadge(group || "ry8h");
             badge.style.opacity = "1";
           } else {
             badge.style.opacity = "0";
