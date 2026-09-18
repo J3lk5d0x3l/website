@@ -6,7 +6,7 @@ import MainCard from "../components/main-card";
 
 const HOME_COMPONENT_EMBED = {
   type: 17,
-  accent_color: 16743171,
+  accent_color: 16738083,
   components: [
     {
       type: 9,
@@ -14,7 +14,7 @@ const HOME_COMPONENT_EMBED = {
         {
           type: 10,
           content:
-            "## [ry8h](https://vyrron.net)\n@ Founder Of Vyrron\nDiscord Bot Developer.\nMis proyectos incluyen [VIRRON](https://vyrron.net/bot) y más!",
+            "## [ry8h](https://vyrron.net)\n@ Founder Of Vyrron, Discord Bot Developer.\nMis proyectos incluyen [VIRRON](https://vyrron.net/bot) y más!",
         },
       ],
       accessory: {
@@ -25,9 +25,9 @@ const HOME_COMPONENT_EMBED = {
     {
       type: 1,
       components: [
+        { type: 2, style: 5, label: "View Website", url: "https://vyrron.net", emoji: { name: "fire", id: "1281081113338450012", animated: false } },
         { type: 2, style: 5, label: "GitHub", url: "https://github.com/J3lk5d0x3l", emoji: { name: "github", id: "1119818837542576208", animated: false } },
-        { type: 2, style: 5, label: "Discord", url: "https://discord.vyrron.net" },
-        { type: 2, style: 5, label: "VIRRON Bot", url: "https://vyrron.net/bot" },
+        { type: 2, style: 5, label: "Discord Server", url: "https://discord.vyrron.net" },
       ],
     },
   ],

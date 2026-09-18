@@ -115,7 +115,7 @@ const Layout: React.FC<LayoutProps> = ({
                   "components": [
                     {
                       "type": 10,
-                      "content": `## [ry8h](https://vyrron.net)\n@ Founder Of Vyrron\nDiscord Bot Developer.\nMis proyectos incluyen [VIRRON](https://vyrron.net/bot) y más!`,
+                      "content": `## [ry8h](https://vyrron.net)\n@ Founder Of Vyrron, Discord Bot Developer.\nMis proyectos incluyen [VIRRON](https://vyrron.net/bot) y más!`,
                     }
                   ],
                   "accessory": {
@@ -130,21 +130,31 @@ const Layout: React.FC<LayoutProps> = ({
                   "components": [
                     {
                       "type": 2,
+                      "label": "View Website",
+                      "style": 5,
+                      "url": "https://vyrron.net",
+                      "emoji": {
+                        "name": "fire",
+                        "id": "1281081113338450012",
+                        "animated": false
+                      }
+                    },
+                    {
+                      "type": 2,
                       "label": "GitHub",
                       "style": 5,
                       "url": "https://github.com/J3lk5d0x3l",
+                      "emoji": {
+                        "name": "github",
+                        "id": "1119818837542576208",
+                        "animated": false
+                      }
                     },
                     {
                       "type": 2,
                       "label": "Discord Server",
                       "style": 5,
                       "url": "https://discord.vyrron.net",
-                    },
-                    {
-                      "type": 2,
-                      "label": "VIRRON Bot",
-                      "style": 5,
-                      "url": "https://vyrron.net/bot",
                     },
                   ]
                 }
