@@ -9,13 +9,18 @@ const COMPONENT_EMBED = {
   accent_color: 5793266,
   components: [
     {
-      type: 12,
-      items: [{ media: { url: "https://vyrron.net/vyrron-og.png" }, description: "VIRRON bot" }],
-    },
-    {
-      type: 10,
-      content:
-        "# VIRRON\nThe all-in-one bot for your Discord server: tickets, automod, music, levels and more.",
+      type: 9,
+      components: [
+        {
+          type: 10,
+          content:
+            "## [VIRRON](https://vyrron.net/bot)\nThe all-in-one bot for your Discord server: tickets, automod, music, levels and more.",
+        },
+      ],
+      accessory: {
+        type: 11,
+        media: { url: "https://vyrron.net/vyrron-bot.png" },
+      },
     },
     {
       type: 1,
