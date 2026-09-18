@@ -17,7 +17,7 @@ export type LayoutProps = {
   children: React.ReactNode;
 };
 const siteTitle = "ry8h";
-const siteDescription = "Solo una persona random en internet";
+const siteDescription = "@ Founder Of Vyrron, Discord Bot Developer.";
 const siteImage = "https://vyrron.net/avatar.png";
 
 const Layout: React.FC<LayoutProps> = ({
@@ -92,7 +92,7 @@ const Layout: React.FC<LayoutProps> = ({
                 "@id": "https://vyrron.net/#website",
                 name: "ry8h",
                 url: "https://vyrron.net/",
-                description: "Solo una persona random en internet.",
+                description: "@ Founder Of Vyrron, Discord Bot Developer.",
                 publisher: {
                   "@id": "https://vyrron.net/#person"
                 },
@@ -115,7 +115,7 @@ const Layout: React.FC<LayoutProps> = ({
                   "components": [
                     {
                       "type": 10,
-                      "content": `## [ry8h](https://vyrron.net)\nSolo una persona random en internet.\nMis proyectos incluyen 🤖 [VIRRON](https://vyrron.net/bot) y más!`,
+                      "content": `## [ry8h](https://vyrron.net)\n@ Founder Of Vyrron\nDiscord Bot Developer.\nMis proyectos incluyen [VIRRON](https://vyrron.net/bot) y más!`,
                     }
                   ],
                   "accessory": {

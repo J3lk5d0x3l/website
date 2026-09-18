@@ -25,8 +25,8 @@ const COMPONENT_EMBED = {
     {
       type: 1,
       components: [
-        { type: 2, style: 5, label: "Invite Bot", url: INVITE_URL, emoji: { name: "🤖" } },
-        { type: 2, style: 5, label: "Discord", url: "https://discord.vyrron.net", emoji: { name: "💬" } },
+        { type: 2, style: 5, label: "Invite Bot", url: INVITE_URL },
+        { type: 2, style: 5, label: "Discord", url: "https://discord.vyrron.net" },
       ],
     },
   ],

@@ -32,7 +32,8 @@ export const MainCard: React.FC = () => (
     <div className="flex flex-col gap-2 md:mr-2">
       <div className="text-center md:text-left">
         <h1 className="text-3xl font-bold leading-9" itemProp="name">ry8h</h1>
-        <p className="text-text-secondary" itemProp="description">Solo una persona random en internet</p>
+        <p className="text-text-secondary" itemProp="description">@ Founder Of Vyrron</p>
+        <p className="text-text-secondary-2 text-sm">Discord Bot Developer.</p>
       </div>
       <div className="flex flex-col md:flex-row gap-2 w-full">
         <ul className="flex flex-row gap-2 w-full *:flex-1 list-none">
