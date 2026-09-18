@@ -14,7 +14,7 @@ const COMPONENT_EMBED = {
         {
           type: 10,
           content:
-            "## [VIRRON](https://vyrron.net/bot)\nThe all-in-one bot for your Discord server: 🤖 tickets, automod, music, levels and more.",
+            "## [VIRRON](https://vyrron.net/bot)\nThe all-in-one bot for your Discord server: tickets, automod, music, levels and more.",
         },
       ],
       accessory: {
