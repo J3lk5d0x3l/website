@@ -133,6 +133,11 @@ const Layout: React.FC<LayoutProps> = ({
                       "label": "View Website",
                       "style": 5,
                       "url": "https://vyrron.net",
+                      "emoji": {
+                        "name": "vyrron",
+                        "id": "1550509597712977930",
+                        "animated": false
+                      }
                     },
                     {
                       "type": 2,

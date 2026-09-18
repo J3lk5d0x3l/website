@@ -25,7 +25,7 @@ const HOME_COMPONENT_EMBED = {
     {
       type: 1,
       components: [
-        { type: 2, style: 5, label: "View Website", url: "https://vyrron.net" },
+        { type: 2, style: 5, label: "View Website", url: "https://vyrron.net", emoji: { name: "vyrron", id: "1550509597712977930", animated: false } },
         { type: 2, style: 5, label: "GitHub", url: "https://github.com/J3lk5d0x3l", emoji: { name: "github", id: "1119818837542576208", animated: false } },
         { type: 2, style: 5, label: "Discord Server", url: "https://discord.vyrron.net" },
       ],
