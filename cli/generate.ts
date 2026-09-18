@@ -1,10 +1,10 @@
 #!/usr/bin/env bun
 
 const WIDTH = 50;
-const WEBSITE_URL = "https://riskymh.dev";
-const GITUHB_URL = "https://github.com/RiskyMH";
-const DISCORD_URL = "https://discord.gg/EpRzgepKuF";
-const EMAIL_MAILTO = atob("bWFpbHRvOm1pY2hhZWxAcmlza3ltaC5kZXY");
+const WEBSITE_URL = "https://vyrron.net";
+const GITUHB_URL = "https://github.com/J3lk5d0x3l";
+const DISCORD_URL = "https://discord.vyrron.net";
+const EMAIL_MAILTO = atob("bWFpbHRvOnYzbGs1ZDB4M2xAdnlycm9uLm5ldA==");
 
 const gray = (str: string) => `\x1b[38;2;107;114;128m${str}\x1b[0m`;
 const lightGray = (str: string) => `\x1b[38;2;156;163;175m${str}\x1b[0m`;
@@ -30,9 +30,9 @@ function center(text: string) {
 
 const content = `${gray("╭" + "─".repeat(WIDTH - 2) + "╮")}
 ${gray("│" + " ".repeat(WIDTH - 2) + "│")}
-${center(bold("🔥 RiskyMH") + "  ")}
+${center(bold("⚡ ry8h") + "  ")}
 ${gray("│" + " ".repeat(WIDTH - 2) + "│")}
-${center(lightGray("Just a random person on the internet"))}
+${center(lightGray("@ Founder Of Vyrron"))}
 ${center(
   link("website", WEBSITE_URL) +
     lightGray(" | ") +

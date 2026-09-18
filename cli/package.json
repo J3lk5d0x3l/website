@@ -1,11 +1,11 @@
 {
-    "name": "riskymh",
-    "description": "Just a random person on the internet!",
-    "homepage": "https://riskymh.dev",
+    "name": "ry8h",
+    "description": "@ Founder Of Vyrron",
+    "homepage": "https://vyrron.net",
     "version": "1.0.0",
-    "author": "RiskyMH",
+    "author": "ry8h",
     "bin": {
-        "riskymh": "./cli.js"
+        "ry8h": "./cli.js"
     },
     "scripts": {
         "prepack": "bun ./generate.ts",
@@ -16,7 +16,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/RiskyMH/website.git",
+        "url": "https://github.com/J3lk5d0x3l/website.git",
         "directory": "cli"
     }
 }

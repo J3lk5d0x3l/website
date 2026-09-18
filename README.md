@@ -1,9 +1,5 @@
-# RiskyMH
+# ry8h
 
-Hello... \
-why you look at the code for my website... \
-I hope you enjoy it :)
+Portfolio + VIRRON bot site.
 
-Its just me trying some simple html!
-
-https://riskymh.dev
+https://vyrron.net
