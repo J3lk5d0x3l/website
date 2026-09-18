@@ -22,7 +22,6 @@ export default function Projects() {
             icon="/vyrron-bot.png"
             links={[
               { type: "discord-bot-invite", url: "https://discord.com/oauth2/authorize?client_id=1536153235113640047&permissions=8&scope=bot", primary: true },
-              { url: "https://github.com/J3lk5d0x3l/vyrron-bot", type: "github" },
               { url: "https://vyrron.net/bot", type: "website" },
             ]}
             description="Bot all-in-one para Discord: tickets, automod, música, niveles y más"
